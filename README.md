@@ -1,4 +1,15 @@
-# React + Vite
+# Bun, Vite, & React
+
+This is me playing around with Bun, Vite, and React
+
+This was super easy to set up with `bun create vite bun-vite-react`
+
+You can run this by:
+* [Installing Bun](https://bun.sh/docs/installation)
+* `bun install`
+* `bun run dev`
+
+## Original Readme:
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
