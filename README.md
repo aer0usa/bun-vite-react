@@ -4,6 +4,10 @@ This is me playing around with Bun, Vite, and React
 
 This was super easy to set up with `bun create vite bun-vite-react`
 
+See [Build a frontend using Vite and Bun](https://bun.sh/guides/ecosystem/vite)
+
+This is easy to get started, and fast!
+
 You can run this by:
 * [Installing Bun](https://bun.sh/docs/installation)
 * `bun install`
