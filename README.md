@@ -13,6 +13,9 @@ You can run this by:
 * `bun install`
 * `bun run dev`
 
+OR, you can run this without installing Bun, with Podman by 
+* running the included `podman-bun.sh`
+
 ## Original Readme:
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

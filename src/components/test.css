@@ -1,3 +1,9 @@
+.centerContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 .testContainer {
     margin: 0 auto;
     text-align: left;
@@ -17,6 +23,10 @@
     // border-right: 1px solid white;
     flex-basis: 20%;
     padding: 0 0.5ex;
+}
+
+.loremParagraph::first-line {
+    font-size: 200%;
 }
 
 .red {
