@@ -1,3 +1,8 @@
+.baconCard {
+    margin: 2ex;
+    padding: 2ex;
+}
+
 .centerContainer {
     align-items: center;
     display: flex;
@@ -31,4 +36,8 @@
 
 .red {
     color: red;
+}
+
+.rightJustify {
+    text-align: right;
 }

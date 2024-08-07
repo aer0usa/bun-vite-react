@@ -3,10 +3,18 @@
 import {useState} from 'react'
 import {ErrorBoundary} from 'react-error-boundary';
 import {PropTypes} from 'prop-types';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Test from './components/test.jsx'
+
+const darkTheme = createTheme({
+      palette: {
+              mode: 'dark',
+            },
+});
 
 Fallback.propTypes = {
     error: PropTypes.object
@@ -26,17 +34,20 @@ function App() {
 
     return (
         <ErrorBoundary FallbackComponent={Fallback}>
-            <div>
-                <Test />
-                { /*
-                    <a href="https://vitejs.dev" target="_blank">
-                        <img src={viteLogo} className="logo" alt="Vite logo" />
-                    </a>
-                    <a href="https://react.dev" target="_blank">
-                        <img src={reactLogo} className="logo react" alt="React logo" />
-                    </a>
-                */ }
-            </div>
+            <ThemeProvider theme={darkTheme}>
+                <div>
+                    <CssBaseline />
+                    <Test />
+                    { /*
+                        <a href="https://vitejs.dev" target="_blank">
+                            <img src={viteLogo} className="logo" alt="Vite logo" />
+                        </a>
+                        <a href="https://react.dev" target="_blank">
+                            <img src={reactLogo} className="logo react" alt="React logo" />
+                        </a>
+                    */ }
+                </div>
+            </ThemeProvider>
             { /*
                 <h1>Vite + React</h1>
                 <div className="card">
