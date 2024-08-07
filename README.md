@@ -16,6 +16,10 @@ You can run this by:
 OR, you can run this without installing Bun, with Podman by 
 * running the included `podman-bun.sh`
 
+OR, with a one-liner like so:
+* `podman run --network host --interactive --tty --rm -v $(pwd):/app/:Z -w /app oven/bun run dev`
+* _Maybe_ that will work with `docker` instead of `podman`?
+
 ## Original Readme:
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
