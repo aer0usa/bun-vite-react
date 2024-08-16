@@ -12,11 +12,12 @@ export default function useGetLoremIpsum(url) {
                 .then(result => {
                     setLoremIpsumError(null);
                     setLoremIpsum(result);
-                    setIsLoremIpsumLoading(false);
                 })
                 .catch(error => {
                     setLoremIpsum(null);
                     setLoremIpsumError(error);
+                })
+                .finally(() => {
                     setIsLoremIpsumLoading(false);
                 });
         }

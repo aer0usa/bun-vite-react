@@ -17,19 +17,6 @@ import {
 import './test.css'
 import useGetLoremIpsum from './hooks/useGetLoremIpsum';
 
-const data = [
-    "one",
-    "two",
-    "three",
-    "four",
-    "five",
-    "six",
-    "seven",
-    "eight",
-    "nine",
-    "ten"
-];
-
 const BASE_IPSUM_LINK = "https://baconipsum.com/api/";
 const DEFAULT_QUANTITY_NAMES = Object.freeze({
     "PARAGRAPHS": "paras",
@@ -128,7 +115,7 @@ function Test() {
                         <FormControl>
                             <FormControlLabel
                                 control={<Checkbox checked={startWithLorem} onChange={handleChangeStart} />}
-                                label="Start with Lorem Ipsum"
+                                label="Start with Bacon Ipsum"
                             />
                         </FormControl>
                     </Grid>
@@ -148,7 +135,7 @@ function Test() {
                         </div>
                 }
                 {
-                    !isLoremIpsumLoading && !loremIpsumError && loremIpsum && loremIpsum.map(txt => (
+                    !loremIpsumError && loremIpsum && loremIpsum.map(txt => (
                         <Card className="baconCard" key={txt}>
                             <Typography
                                 className="loremParagraph"
@@ -168,13 +155,6 @@ function Test() {
                         </>
                 }
             </Box>
-            <div className="listContainer">
-                {
-                    data.map(item => (
-                        <div key={item}>{item}</div>
-                    ))
-                }
-            </div>
             <div className="centerContainer">
                 <Typography variant="overline">
                     This is Material UI
